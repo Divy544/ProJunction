@@ -1,0 +1,115 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+header {
+    background-color: #00796b; /* Cool teal */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 0.5rem 0 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.wiggle-button:hover {
+    animation: wiggle 0.5s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    color: #00796b; /* Cool teal */
+}
+
+section p, section ul {
+    color: #666;
+}
+
+ul {
+    padding-left: 1rem;
+}
+
+ul li {
+    margin-bottom: 1rem;
+}
+
+ul li h3 {
+    color: #004d40; /* Darker teal */
+}
+
+ul li p {
+    color: #555;
+}
+
+.project-photo {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+    padding: 0.5rem 0;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+footer {
+    background-color: #004d40; /* Darker teal */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
